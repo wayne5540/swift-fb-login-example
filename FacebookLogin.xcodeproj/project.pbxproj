@@ -12,6 +12,8 @@
 		B0EC665F1C1297B800EB9AC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0EC665D1C1297B800EB9AC5 /* Main.storyboard */; };
 		B0EC66611C1297B800EB9AC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0EC66601C1297B800EB9AC5 /* Assets.xcassets */; };
 		B0EC66641C1297B800EB9AC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0EC66621C1297B800EB9AC5 /* LaunchScreen.storyboard */; };
+		B0EC666C1C12981200EB9AC5 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0EC666B1C12981200EB9AC5 /* FBSDKCoreKit.framework */; };
+		B0EC666E1C12981900EB9AC5 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0EC666D1C12981900EB9AC5 /* FBSDKLoginKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		B0EC66601C1297B800EB9AC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0EC66631C1297B800EB9AC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0EC66651C1297B800EB9AC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0EC666B1C12981200EB9AC5 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		B0EC666D1C12981900EB9AC5 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0EC666E1C12981900EB9AC5 /* FBSDKLoginKit.framework in Frameworks */,
+				B0EC666C1C12981200EB9AC5 /* FBSDKCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +44,8 @@
 		B0EC664D1C1297B800EB9AC5 = {
 			isa = PBXGroup;
 			children = (
+				B0EC666D1C12981900EB9AC5 /* FBSDKLoginKit.framework */,
+				B0EC666B1C12981200EB9AC5 /* FBSDKCoreKit.framework */,
 				B0EC66581C1297B800EB9AC5 /* FacebookLogin */,
 				B0EC66571C1297B800EB9AC5 /* Products */,
 			);
@@ -250,6 +258,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FacebookLogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WayneChu.FacebookLogin;
@@ -261,6 +273,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FacebookLogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WayneChu.FacebookLogin;
